@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple Node.js server that acts as a bridge between the Straico API and the OpenAI API. It listens for POST requests on the `/chat/completions` endpoint and forwards them to the OpenAI API. The response is then sent back to the client.
+This is a simple Node.js server that acts as a bridge between the Straico API and the OpenAI API. It listens for POST requests on the `/chat/completions` endpoint and forwards them to the Straico API. The response is then sent back to the client as a stream in the OpenAI API format.
 
 ## Configuration
 
