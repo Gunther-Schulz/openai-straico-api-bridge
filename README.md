@@ -16,6 +16,16 @@ DEBUG=<false|true>
 Default port is 3000.
 Debug is set to false by default.
 
+Optional configuration:
+
+```
+STRAICO_API_KEY=<YOUR_STRAICO_API_KEY>
+
+```
+
+If you don't provide the Straico API key, you will need to provide it in the request. If you do both, the request key will take precedence.
+If you provide the Straico API key in the environment, a list of available modls will be printed on the console when the server starts.
+
 ## Running the server
 
 Start Ngrok on the local machine:
