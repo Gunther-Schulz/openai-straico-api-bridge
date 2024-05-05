@@ -58,14 +58,7 @@ curl https://1234567.ngrok.app/chat/completions -H "Content-Type: application/js
 }'
 ```
 
-Use it for Cursor.ai
-
 ## TODO
 
 - [ ] Create a Dockerfile
 - [ ] Remove Ngrok dependency
-- [ ] Use key provided by Cursor.sh
-
-## Notes
-
-authorization: 'Bearer <StraicoKey>',
