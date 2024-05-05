@@ -6,25 +6,19 @@ Currently it requires Ngrok to be running on the local machine to expose the loc
 
 ## Configuration
 
-Create a `.env` file in the root directory and add the following:
+To override the default settings, create a `.env` file in the root directory and add the following:
 
 ```
+STRAICO_API_KEY=<YOUR_STRAICO_API_KEY>
 PORT=<PORT>
 DEBUG=<false|true>
 ```
 
-Default port is 3000.
-Debug is set to false by default.
-
-Optional configuration:
-
-```
-STRAICO_API_KEY=<YOUR_STRAICO_API_KEY>
-
-```
-
 If you don't provide the Straico API key, you will need to provide it in the request. If you do both, the request key will take precedence.
 If you provide the Straico API key in the environment, a list of available modls will be printed on the console when the server starts.
+
+Default port is 3000.
+Debug is set to false by default.
 
 ## Running the server
 
