@@ -1,8 +1,8 @@
 # OpenAI Straico API Bridge
 
-## Caveats
+## Description
 
-Currently it requires Ngrok to be running on the local machine to expose the local server to the internet.
+This is a simple Node.js server that acts as a bridge between the Straico API and the OpenAI API. It listens for POST requests on the `/chat/completions` endpoint and forwards them to the OpenAI API. The response is then sent back to the client.
 
 ## Configuration
 
@@ -51,6 +51,10 @@ curl https://1234567.ngrok.app/chat/completions -H "Content-Type: application/js
   "model": "openai/gpt-3.5-turbo-0125"
 }'
 ```
+
+## Caveats
+
+When using Cursor.sh (and likely other apps), currently it requires Ngrok to be running on the local machine to expose the local server to the internet.
 
 ## TODO
 
