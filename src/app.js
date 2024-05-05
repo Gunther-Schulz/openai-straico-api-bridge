@@ -63,10 +63,10 @@ app.post("/chat/completions", async (req, res) => {
     // Simulate streaming by sending chunks of data
     for (let i = 0; i < 1; i++) {
       const responseStructure = {
-        id: `gen-qvXE5dv5zuT4O1dGpdHBh97seUAf-${i}`,
+        id: openAiResponse.id, // TODO: Take id from Straico response
         object: "chat.completion.chunk",
         created: Date.now(),
-        model: "gpt-3.5-turbo",
+        model: model,
         choices: transformedChoices,
       };
 

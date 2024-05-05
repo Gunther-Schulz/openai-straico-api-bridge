@@ -37,3 +37,4 @@ Use it for Cursor.ai
 
 - [ ] Create a Dockerfile
 - [ ] Remove Ngrok dependency
+- [ ] Use key provided by Cursor.sh
