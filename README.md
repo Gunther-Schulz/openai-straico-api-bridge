@@ -10,10 +10,11 @@ Create a `.env` file in the root directory and add the following:
 
 ```
 PORT=<PORT>
-STRATIO_API_KEY=<YOUR_API_KEY>
+DEBUG=<false|true>
 ```
 
 Default port is 3000.
+Debug is set to false by default.
 
 ## Running the server
 
@@ -29,7 +30,23 @@ Start the server:
 npm start
 ```
 
-## Usecases
+## Example request
+
+```
+curl https://1234567.ngrok.app/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer MY_STRAICO_API_KEY" -d '{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a test assistant."
+    },
+    {
+      "role": "user",
+      "content": "Testing. Just say hi and nothing else."
+    }
+  ],
+  "model": "openai/gpt-3.5-turbo-0125"
+}'
+```
 
 Use it for Cursor.ai
 
@@ -38,3 +55,7 @@ Use it for Cursor.ai
 - [ ] Create a Dockerfile
 - [ ] Remove Ngrok dependency
 - [ ] Use key provided by Cursor.sh
+
+## Notes
+
+authorization: 'Bearer <StraicoKey>',
