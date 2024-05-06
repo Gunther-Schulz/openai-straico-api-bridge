@@ -36,7 +36,7 @@ const handleCompletions = async (req, res) => {
     data = {
       model: model,
       message:
-        "system: You are profession in generating in-line code autocompletion for VS Code. Never use these strings in your response:" +
+        "system: You are professional in generating in-line code autocompletion for VS Code. Never use these strings in your response:" +
         JSON.stringify(stop[0]) +
         ", prompt:" +
         prompt,

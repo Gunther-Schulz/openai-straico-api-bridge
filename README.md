@@ -60,3 +60,19 @@ When using Cursor.sh (and likely other apps), currently it requires Ngrok to be 
 
 - [ ] Create a Dockerfile
 - [ ] Remove Ngrok dependency
+
+## Notes
+
+Straico does not offer a model that is well suited for in-line autocompletion. Continue.dev recommends using [Starcoder](https://docs.continue.dev/walkthroughs/tab-autocomplete#setting-up-with-ollama-default) which can be run lcoally.
+
+Start the server:
+
+```
+ollama serve
+```
+
+and then run the model:
+
+```
+ollama run starcoder2:3b
+```
