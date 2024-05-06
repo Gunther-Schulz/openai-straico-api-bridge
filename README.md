@@ -15,7 +15,7 @@ DEBUG=<false|true>
 ```
 
 If you don't provide the Straico API key, you will need to provide it in the request. If you do both, the request key will take precedence.
-If you provide the Straico API key in the environment, a list of available modls will be printed on the console when the server starts.
+If you provide the Straico API key in the environment, a list of available models will be printed on the console when the server starts.
 
 Default port is 3000.
 Debug is set to false by default.
