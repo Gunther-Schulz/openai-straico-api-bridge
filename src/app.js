@@ -90,8 +90,8 @@ function handleApiResponse(url, completion) {
   });
 }
 // // Set endpoints
-app.post("/chat/completions", handleCompletions);
-app.post("/completions", handleCompletions);
+// app.post("/chat/completions", handleCompletions);
+// app.post("/completions", handleCompletions);
 
 // // Function to handle streaming responses
 // const streamResponse = (req, res, transformedChoices) => {

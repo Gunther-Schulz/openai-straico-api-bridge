@@ -9,13 +9,9 @@ This is a simple Node.js server that acts as a bridge between the Straico API an
 To override the default settings, create a `.env` file in the root directory and add the following:
 
 ```
-STRAICO_API_KEY=<YOUR_STRAICO_API_KEY>
 PORT=<PORT>
 DEBUG=<false|true>
 ```
-
-If you don't provide the Straico API key, you will need to provide it in the request. If you do both, the request key will take precedence.
-If you provide the Straico API key in the environment, a list of available models will be printed on the console when the server starts.
 
 Default port is 3000.
 Debug is set to false by default.
