@@ -1,4 +1,3 @@
-// Import necessary libraries and initialize app
 const express = require("express");
 const axios = require("axios");
 require("dotenv").config();
@@ -7,18 +6,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Set up server port
 const PORT = process.env.PORT || 3000;
 const DEBUG = process.env.DEBUG === "true";
 
-// Start the server
 app.listen(PORT, () => {
   if (DEBUG) {
     console.log(`Debug: Server running on port ${PORT}`);
   }
 });
 
-// Function to handle both types of completions
+app.post("/chat/completions", handleCompletions);
+app.post("/completions", handleCompletions);
+
 async function handleCompletions(req, res) {
   const { messages, model, stop, prompt } = req.body;
   const originalUrl = req.originalUrl;
@@ -90,6 +89,9 @@ function handleApiResponse(url, completion) {
     }
   });
 }
+// // Set endpoints
+app.post("/chat/completions", handleCompletions);
+app.post("/completions", handleCompletions);
 
 // // Function to handle streaming responses
 // const streamResponse = (req, res, transformedChoices) => {
